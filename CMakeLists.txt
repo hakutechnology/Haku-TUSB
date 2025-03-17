@@ -4,12 +4,15 @@ project(TinyUSB CXX C ASM)
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB_RECURSE SOURCES "src/*.c")
+file(GLOB_RECURSE SOURCES
+        src/*.c
+)
 
 add_library(TinyUSB INTERFACE)
 
 target_include_directories(TinyUSB INTERFACE
-        lib
+        src
+        hw
 )
 
 target_sources(TinyUSB INTERFACE ${SOURCES})

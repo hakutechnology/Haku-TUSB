@@ -46,7 +46,7 @@ sdkconfig
 .PVS-Studio
 .vscode/
 build
-CMakeFiles
+#CMakeFiles
 Debug
 RelWithDebInfo
 Release
